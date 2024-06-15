@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron</title>
+    <link rel="stylesheet" href="src/styleMenuLateral.css">
+    <link rel="stylesheet" href="src/styleCalendario.css">
+</head>
+
+<body>
+    <nav class="menu-lateral">
+        <div class="menulateral-content">
+            <div class="logo">
+                <img src="src/imgs/icons/LogoSistema.png" alt="" id="logoSistem">
+            </div>
+
+            <ul>
+                <li>
+                    <?xml version="1.0" ?><svg height="20" viewBox="0 0 24 24" width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20,8 L20,5 L18,5 L18,6 L16,6 L16,5 L8,5 L8,6 L6,6 L6,5 L4,5 L4,8 L20,8 Z M20,10 L4,10 L4,20 L20,20 L20,10 Z M18,3 L20,3 C21.1045695,3 22,3.8954305 22,5 L22,20 C22,21.1045695 21.1045695,22 20,22 L4,22 C2.8954305,22 2,21.1045695 2,20 L2,5 C2,3.8954305 2.8954305,3 4,3 L6,3 L6,2 L8,2 L8,3 L16,3 L16,2 L18,2 L18,3 Z M9,14 L7,14 L7,12 L9,12 L9,14 Z M13,14 L11,14 L11,12 L13,12 L13,14 Z M17,14 L15,14 L15,12 L17,12 L17,14 Z M9,18 L7,18 L7,16 L9,16 L9,18 Z M13,18 L11,18 L11,16 L13,16 L13,18 Z"
+                            fill-rule="evenodd" />
+                    </svg>
+                    Calendário
+                </li>
+            </ul>
+            <hr size="3" color="#303030" width="80%">
+            <ul>
+                <li>
+                    <svg enable-background="new 0 0 24 24" id="StudentSVG" version="1.0" viewBox="0 0 24 24"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <polygon points="12,3 1,9 12,15 23,9 " />
+                        <polygon points="19,12.8 12,17 5,12.8 5,17.2 12,21 19,17.2 " />
+                        <rect height="8" width="2" x="21" y="9" />
+                    </svg>
+                    Alunos
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="personsSVG" viewBox="0 0 32 32">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: none;
+                                }
+
+                                .cls-1,
+                                .cls-2 {
+                                    stroke-width: 0px;
+                                }
+                            </style>
+                        </defs>
+                        <g id="icons">
+                            <g id="Person">
+                                <g id="User">
+                                    <path class="cls-2"
+                                        d="m12,4c2.76,0,5,2.24,5,5s-2.24,5-5,5-5-2.24-5-5c0-2.76,2.24-5,5-5m0-2c-3.87,0-7,3.13-7,7s3.13,7,7,7,7-3.13,7-7-3.13-7-7-7Z" />
+                                    <path class="cls-2"
+                                        d="m22,30h-2v-5c0-2.76-2.24-5-5-5h-6c-2.76,0-5,2.24-5,5v5h-2v-5c0-3.86,3.14-7,7-7h6c3.86,0,7,3.14,7,7v5Z" />
+                                    <path class="cls-2"
+                                        d="m20,2v2c2.76,0,5,2.24,5,5s-2.24,5-5,5v2c3.87,0,7-3.13,7-7s-3.13-7-7-7Z" />
+                                    <path class="cls-2" d="m30,30h-2v-5c0-2.76-2.24-5-5-5v-2c3.86,0,7,3.14,7,7v5Z" />
+                                    <rect class="cls-1" width="32" height="32" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    Turmas
+                </li>
+            </ul>
+            <hr size="3" color="#303030" width="80%">
+            <ul>
+                <li>
+                    <svg enable-background="new 0 0 10 10" height="50px" id="Layer_1" version="1.1"
+                        viewBox="50 50 400 400" width="1000px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M256,73.089c-100.864,0-182.911,82.058-182.911,182.917S155.136,438.911,256,438.911  c100.859,0,182.911-82.046,182.911-182.905S356.86,73.089,256,73.089z M256,410.059c-84.951,0-154.06-69.108-154.06-154.054  c0-84.956,69.109-154.065,154.06-154.065c84.951,0,154.06,69.109,154.06,154.065C410.06,340.951,340.951,410.059,256,410.059z" />
+                        <path
+                            d="M227.076,220.157c0-11.572,16.925-13.548,31.606-13.548c13.837,0,32.744,6.485,48.553,14.681l3.098-31.895  c-7.906-4.52-26.247-9.884-44.877-11.005l4.515-32.461H239.77l4.521,32.461c-38.947,3.664-51.651,26.242-51.651,45.154  c0,47.697,88.898,37.547,88.898,66.888c0,11.017-10.434,14.959-28.785,14.959c-24.832,0-43.467-8.74-53.056-17.779l-4.803,35.848  c9.04,5.364,27.375,10.161,49.397,11.294l-4.521,31.329h30.201l-4.515-31.617c45.722-3.954,53.906-28.23,53.906-44.311  C319.363,233.428,227.076,247.532,227.076,220.157z" />
+                    </svg>
+                    Pagamentos
+                </li>
+                <li>
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M243.4 2.587C251.4-.8625 260.6-.8625 268.6 2.587L492.6 98.59C506.6 104.6 514.4 119.6 511.3 134.4C508.3 149.3 495.2 159.1 479.1 160V168C479.1 181.3 469.3 192 455.1 192H55.1C42.74 192 31.1 181.3 31.1 168V160C16.81 159.1 3.708 149.3 .6528 134.4C-2.402 119.6 5.429 104.6 19.39 98.59L243.4 2.587zM256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128zM127.1 416H167.1V224H231.1V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H31.1C17.9 512 5.458 502.8 1.372 489.3C-2.715 475.8 2.515 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 63.1 420.3V224H127.1V416z" />
+                    </svg>
+                    Financeira
+                </li>
+            </ul>
+            <hr size="3" color="#303030" width="80%">
+            <ul>
+                <li>
+                    <svg class="bi bi-door-open-fill" fill="currentColor" height="20" viewBox="0 0 16 16" width="20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                    </svg>
+                    Sair
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="title">
+                <h1>Calendário</h1>
+                <div class="description">
+                    <div class="button">
+                        <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M417.4,224H288V94.6c0-16.9-14.3-30.6-32-30.6c-17.7,0-32,13.7-32,30.6V224H94.6C77.7,224,64,238.3,64,256  c0,17.7,13.7,32,30.6,32H224v129.4c0,16.9,14.3,30.6,32,30.6c17.7,0,32-13.7,32-30.6V288h129.4c16.9,0,30.6-14.3,30.6-32  C448,238.3,434.3,224,417.4,224z"/></svg>
+                        <p>Agendamento</p>
+                    </div>
+                    <div class="dots">
+                        <svg id="threeDots" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg"><path d="M6 10C6 11.1046 5.10457 12 4 12C2.89543 12 2 11.1046 2 10C2 8.89543 2.89543 8 4 8C5.10457 8 6 8.89543 6 10Z" /><path d="M12 10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10C8 8.89543 8.89543 8 10 8C11.1046 8 12 8.89543 12 10Z" /><path d="M16 12C17.1046 12 18 11.1046 18 10C18 8.89543 17.1046 8 16 8C14.8954 8 14 8.89543 14 10C14 11.1046 14.8954 12 16 12Z" /></svg>
+                    </div>
+                </div>
+            </div>
+            <hr size="3" color="#303030" width="96%">
+            <div class="arrows">
+                <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><title/><path d="M39.3756,48.0022l30.47-25.39a6.0035,6.0035,0,0,0-7.6878-9.223L26.1563,43.3906a6.0092,6.0092,0,0,0,0,9.2231L62.1578,82.615a6.0035,6.0035,0,0,0,7.6878-9.2231Z"/></svg>
+                <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><title/><path d="M69.8437,43.3876,33.8422,13.3863a6.0035,6.0035,0,0,0-7.6878,9.223l30.47,25.39-30.47,25.39a6.0035,6.0035,0,0,0,7.6878,9.2231L69.8437,52.6106a6.0091,6.0091,0,0,0,0-9.223Z"/></svg>
+            </div>
+            <div class="calendar">
+
+            </div>
+        </section>
+    </main>
+    </div>
+</body>
+
+</html>

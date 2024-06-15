@@ -1,0 +1,80 @@
+main{
+    background-color: #232324;
+    width: 100%;
+}
+
+.title{
+    color: white;
+    padding: 7rem 0 0 4rem;
+    font-size: 28px;
+}
+
+.description{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 2rem;
+    margin-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 18px;
+    color: black;
+    border-radius: 4px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.description svg{
+    fill: black;
+    width: 1.6rem;
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots:hover{
+    cursor: pointer;
+}
+
+.dots svg:hover, .arrows svg:hover{
+    cursor: pointer;
+    fill: #A9AAB1;
+    transition: 0.5s;
+}
+
+.dots svg{
+    fill: white;
+    width: 2rem;
+}
+
+.description p{
+    margin-left: 1rem;
+}
+
+.arrows svg{
+    width: 2.3rem;
+    height: 3rem;
+    fill: white;
+    margin-left: 1rem;
+}
+
+.arrows{
+    display: flex;
+    justify-content: end;
+    padding-right: 4rem;
+    padding-top: 0.5rem;
+}
+
